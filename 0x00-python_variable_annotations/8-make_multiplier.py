@@ -9,6 +9,8 @@ from typing import Callable
 
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
+    '''Returns the square of multiplier'''
     def product(value: float) -> float:
+        '''Returns the square of value'''
         return value * multiplier
     return product
